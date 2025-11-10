@@ -16,3 +16,14 @@ if (keyboard_check(vk_control))
 	draw_text(x_to+20, y_to+25, y_to);
 	draw_text(x, y+20, direction);
 }
+
+if (mouse_check_button_pressed(mb_left))
+{
+	if collision_point(mouse_x, mouse_y, obj_ItemParrent, true, false) 
+	{
+        draw_text(x, y+25, id);
+    }
+}
+
+
+
