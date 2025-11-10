@@ -1,0 +1,27 @@
+draw_self();
+
+if (keyboard_check(vk_control))
+{
+	// Water Healthbar
+	draw_set_color(c_white);
+	draw_rectangle(x,y-18,x+32,y-10,false);
+	draw_set_color(c_blue);
+	draw_rectangle(x+1,y-17,x+(31*water)/100,y-11,false);
+
+	// Age Healthbar
+	draw_set_color(c_white);
+	draw_rectangle(x,y-8,x+32,y,false);
+	draw_set_color(c_red);
+	draw_rectangle(x+1,y-7,x+(31*age)/100,y-1,false);
+
+	draw_set_color(c_white);
+}
+
+if (water <= 50 and water > 0)
+{
+	draw_sprite(spr_WaterWarning,0,x+8,y-8);
+}
+else if (water <= 0)
+{
+	draw_sprite(spr_DeadWarning,0,x+8,y-8);
+}
