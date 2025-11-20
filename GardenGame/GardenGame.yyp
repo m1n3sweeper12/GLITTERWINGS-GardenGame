@@ -46,7 +46,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"GardenGame",
   "resources":[
@@ -69,6 +69,7 @@
     {"id":{"name":"obj_SeedsAir","path":"objects/obj_SeedsAir/obj_SeedsAir.yy",},},
     {"id":{"name":"obj_SeedsEarth","path":"objects/obj_SeedsEarth/obj_SeedsEarth.yy",},},
     {"id":{"name":"obj_SeedsFire","path":"objects/obj_SeedsFire/obj_SeedsFire.yy",},},
+    {"id":{"name":"obj_SeedsParrent","path":"objects/obj_SeedsParrent/obj_SeedsParrent.yy",},},
     {"id":{"name":"obj_SeedsWater","path":"objects/obj_SeedsWater/obj_SeedsWater.yy",},},
     {"id":{"name":"obj_Shovel","path":"objects/obj_Shovel/obj_Shovel.yy",},},
     {"id":{"name":"obj_WateringCan","path":"objects/obj_WateringCan/obj_WateringCan.yy",},},

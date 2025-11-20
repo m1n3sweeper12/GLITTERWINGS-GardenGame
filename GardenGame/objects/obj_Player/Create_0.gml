@@ -128,7 +128,3 @@ function DropItem()
 
 }
 
-function HarvestCrop()
-{
-	//asdf
-}

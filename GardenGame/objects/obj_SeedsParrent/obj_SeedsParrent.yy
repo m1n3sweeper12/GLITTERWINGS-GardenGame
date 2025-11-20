@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_SeedsAir",
-  "eventList":[],
+  "%Name":"obj_SeedsParrent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_SeedsAir",
+  "name":"obj_SeedsParrent",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.seedsAir",},
   ],
@@ -12,8 +15,8 @@
     "path":"folders/Objects/Items/Seeds.yy",
   },
   "parentObjectId":{
-    "name":"obj_SeedsParrent",
-    "path":"objects/obj_SeedsParrent/obj_SeedsParrent.yy",
+    "name":"obj_ItemParrent",
+    "path":"objects/obj_ItemParrent/obj_ItemParrent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +35,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_SeedsAir",
-    "path":"sprites/spr_SeedsAir/spr_SeedsAir.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
