@@ -34,25 +34,25 @@ if (mouse_check_button_pressed(mb_right))
 		// SEEDS
 	
 		case equipped.seedsFire:
-		// If right clicking tilled ground, then plant fire plant
+		PlantSeeds(obj_PlantFire);
 		break;
 		
 		case equipped.seedsEarth:
-		// If right clicking tilled ground, then plant earth plant
+		PlantSeeds(obj_PlantEarth);
 		break;
 
 		case equipped.seedsWater:
-		// If right clicking tilled ground, then plant water plant
+		PlantSeeds(obj_PlantWater);
 		break;
 
 		case equipped.seedsAir:
-		// If right clicking tilled ground, then plant air plant
+		PlantSeeds(obj_PlantAir);
 		break;
 		
 		// TOOLS
-		
+
 		case equipped.wateringcan:
-		// If on a plant, water it.
+		// Placeholder
 		break;
 
 		case equipped.shovel:
@@ -76,3 +76,5 @@ if (point_distance(x, y, x_to, y_to) < 2)
 	
 }
 
+if (current_special_value <= 0) { current_special_value = 0; }
+if (current_special_value >= 100) { current_special_value = 100; }

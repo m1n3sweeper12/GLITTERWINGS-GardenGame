@@ -25,5 +25,12 @@ if (mouse_check_button_pressed(mb_left))
     }
 }
 
+if (has_special = true)
+{
+	draw_set_color(c_white);
+	draw_rectangle(x,y,x+32,y-5,false);
+	draw_set_color(bar_main_color);
+	draw_rectangle(x+1,y-1,x+(31*current_special_value)/100,y-4,false);
 
-
+	draw_set_color(c_white);
+}

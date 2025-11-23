@@ -1,14 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_SeedsParrent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_SeedsParrent",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.seedsAir",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"has_special","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"bar_main_color","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF00A8FF",},
   ],
   "parent":{
     "name":"Seeds",
