@@ -15,6 +15,7 @@ enum equipped {
 	seedsAir
 }
 
+
 current_item = equipped.none;
 
 x_to = 0;
@@ -27,6 +28,13 @@ farmland_tileset = layer_tilemap_get_id("Tile_Dirt");
 farmland_tile_type = undefined;
 
 can_equip = true;
+
+
+// For storing special values: (Crates, Seeds, Watering Cans, the likes.)
+
+current_special_value = 0;
+bar_main_color = c_gray;
+has_special = false;
 
 function PlowFarmland() 
 {
@@ -54,70 +62,85 @@ function PlowFarmland()
 	}
 }
 
+function PlantSeeds(plant_object)
+{
+	if (x_snap = x and y_snap = y) // If the mouse clicks on the same tile the player is on...
+	{
+		if (!place_meeting(x, y, obj_PlantParrent))
+		{
+			// Detects what tile you are clicking on
+			if(farmland_tileset > -1 and tilemap_get_at_pixel(farmland_tileset, x_snap, y_snap) > -1)
+			{
+				farmland_tile_type = tile_get_index(tilemap_get_at_pixel(farmland_tileset, x_snap, y_snap));
+			}
+	
+			// Checks if the tile is empty or not.
+			if (farmland_tile_type != 0)
+			{
+				instance_create_layer(x, y, "Plants", plant_object);
+				current_special_value -= 5;
+				if (current_special_value <= 0) { current_item = equipped.none; }
+			}
+		}
+	}
+}
+
 function DropItem()
 {
+	var dropped_object;
+	var object_name;
+	
 	switch(current_item)
 	{
 		
 		// CRATES
 		
 		case equipped.crateEmpty:
-		instance_create_layer(x, y, "Instances", obj_EmptyCrate);
-		current_item = equipped.none;
+		object_name = obj_EmptyCrate;
 		break;
 
 		case equipped.crateFire:
-		instance_create_layer(x, y, "Instances", obj_CrateFire);
-		current_item = equipped.none;
+		object_name = obj_CrateFire;
 		break;
 
 		case equipped.crateEarth:
-		instance_create_layer(x, y, "Instances", obj_CrateEarth);
-		current_item = equipped.none;
+		object_name = obj_CrateEarth;
 		break;
 		
 		case equipped.crateWater:
-		instance_create_layer(x, y, "Instances", obj_CrateWater);
-		current_item = equipped.none;
+		object_name = obj_CrateWater;
 		break;
 
 		case equipped.crateAir:
-		instance_create_layer(x, y, "Instances", obj_CrateAir);
-		current_item = equipped.none;
+		object_name = obj_CrateAir;
 		break;
 		
 		// SEEDS
 		
 		case equipped.seedsFire:
-		instance_create_layer(x, y, "Instances", obj_SeedsFire);
-		current_item = equipped.none;
+		object_name = obj_SeedsFire;
 		break;
 		
 		case equipped.seedsEarth:
-		instance_create_layer(x, y, "Instances", obj_SeedsEarth);
-		current_item = equipped.none;
+		object_name = obj_SeedsEarth;
 		break;
 
 		case equipped.seedsWater:
-		instance_create_layer(x, y, "Instances", obj_SeedsWater);
-		current_item = equipped.none;
+		object_name = obj_SeedsWater;
 		break;
 
 		case equipped.seedsAir:
-		instance_create_layer(x, y, "Instances", obj_SeedsAir);
-		current_item = equipped.none;
+		object_name = obj_SeedsAir;
 		break;
 		
 		// TOOLS
 		
 		case equipped.wateringcan:
-		instance_create_layer(x, y, "Instances", obj_WateringCan);
-		current_item = equipped.none;
+		object_name = obj_WateringCan;
 		break;
 
 		case equipped.shovel:
-		instance_create_layer(x, y, "Instances", obj_Shovel);
-		current_item = equipped.none;
+		object_name = obj_Shovel;
 		break;
 		
 		// If you have nothing equipped
@@ -125,10 +148,17 @@ function DropItem()
 		default:
 		break;
 	}
+	
+	if (current_item != equipped.none)
+	{
+		dropped_object = instance_create_layer(x, y, "Instances", object_name);
+		with (dropped_object)
+		{
+			dropped_object.current_special_value = obj_Player.current_special_value;
+		}
+		has_special = false;
+		current_item = equipped.none;
+	}
 
 }
 
-function HarvestCrop()
-{
-	//asdf
-}

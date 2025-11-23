@@ -12,8 +12,8 @@
     "path":"folders/Objects/Items/Seeds.yy",
   },
   "parentObjectId":{
-    "name":"obj_ItemParrent",
-    "path":"objects/obj_ItemParrent/obj_ItemParrent.yy",
+    "name":"obj_SeedsParrent",
+    "path":"objects/obj_SeedsParrent/obj_SeedsParrent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

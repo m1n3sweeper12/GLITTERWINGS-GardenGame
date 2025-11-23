@@ -2,7 +2,6 @@
   "$GMObject":"",
   "%Name":"obj_ItemParrent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -28,6 +27,11 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"item_name","filters":[],"listItems":[],"multiselect":false,"name":"item_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"equipped.none","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"has_special","filters":[],"listItems":[],"multiselect":false,"name":"has_special","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"current_special_value","filters":[],"listItems":[],"multiselect":false,"name":"current_special_value","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"bar_main_color","filters":[],"listItems":[],"multiselect":false,"name":"bar_main_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
+    {"$GMObjectProperty":"v2","%Name":"bar_background_color","filters":[],"listItems":[],"multiselect":false,"name":"bar_background_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFFFFFFF","varType":7,},
+    {"$GMObjectProperty":"v2","%Name":"maximum_special_value","filters":[],"listItems":[],"multiselect":false,"name":"maximum_special_value","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

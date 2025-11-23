@@ -31,8 +31,10 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"dehydration_speed","filters":[],"listItems":[],"multiselect":false,"name":"dehydration_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"aging_speed","filters":[],"listItems":[],"multiselect":false,"name":"aging_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"aging_speed","filters":[],"listItems":[],"multiselect":false,"name":"aging_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"plant_type_in_crate","filters":[],"listItems":[],"multiselect":false,"name":"plant_type_in_crate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"equipped.crateAir","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"water_requirement","filters":[],"listItems":[],"multiselect":false,"name":"water_requirement","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"harvest_yield","filters":[],"listItems":[],"multiselect":false,"name":"harvest_yield","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

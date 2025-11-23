@@ -1,11 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_CrateParrent",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Shed","path":"objects/obj_Shed/obj_Shed.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_CrateParrent",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.crateEmpty",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"has_special","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"bar_main_color","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF009902",},
   ],
   "parent":{
     "name":"Crates",
@@ -32,10 +36,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_CrateEmpty",
-    "path":"sprites/spr_CrateEmpty/spr_CrateEmpty.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

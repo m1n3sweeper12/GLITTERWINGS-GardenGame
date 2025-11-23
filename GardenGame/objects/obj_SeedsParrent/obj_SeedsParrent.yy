@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_WateringCan",
+  "%Name":"obj_SeedsParrent",
   "eventList":[],
   "managed":true,
-  "name":"obj_WateringCan",
+  "name":"obj_SeedsParrent",
   "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.seedsAir",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"has_special","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"bar_main_color","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FFFF0000",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.wateringcan",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"bar_main_color","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF00A8FF",},
   ],
   "parent":{
-    "name":"Tools",
-    "path":"folders/Objects/Items/Tools.yy",
+    "name":"Seeds",
+    "path":"folders/Objects/Items/Seeds.yy",
   },
   "parentObjectId":{
     "name":"obj_ItemParrent",
@@ -34,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_WateringCan",
-    "path":"sprites/spr_WateringCan/spr_WateringCan.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
