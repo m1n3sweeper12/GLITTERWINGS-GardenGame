@@ -2,8 +2,6 @@ draw_self();
 
 draw_sprite(spr_Cursor, 0, x_snap, y_snap);
 
-
-
 if (keyboard_check(vk_control))
 {
 	draw_circle(x_to, y_to, 2, 0);
