@@ -1,6 +1,5 @@
-// Initialize drag to false so we don't drag until mouse is over our instance. 
-drag = false;
+isSelected = false;
+orig_x = x;
+orig_y = y;
 
-// Mouse x and y as we will be doing calculations
-mx = 0;
-my = 0;
+

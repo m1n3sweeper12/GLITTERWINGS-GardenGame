@@ -11,13 +11,11 @@ x_snap = floor(mouse_x / grid_x) * grid_x;
 y_snap = floor(mouse_y / grid_y) * grid_y;
 
 // Snaps your mouse position to the grid before moving the player to the location.
-if (mouse_check_button_pressed(mb_left))
+if (mouse_check_button_pressed(mb_left) and !position_meeting(gui_mouse_x, gui_mouse_y, obj_GUI_ButtonParrent))
 {
-
 	x_to = x_snap;
 	y_to = y_snap;
 	move_towards_point(x_to, y_to, 3);
-
 }
 
 // In the future this should be based on what you have in your hands (Shovel, Crate, Watering Can)
