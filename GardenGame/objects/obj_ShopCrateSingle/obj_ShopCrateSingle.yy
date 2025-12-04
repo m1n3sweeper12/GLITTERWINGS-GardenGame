@@ -6,6 +6,7 @@
   "name":"obj_ShopCrateSingle",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ShopItemParrent","path":"objects/obj_ShopItemParrent/obj_ShopItemParrent.yy",},"propertyId":{"name":"purchased_item","path":"objects/obj_ShopItemParrent/obj_ShopItemParrent.yy",},"resource":{"name":"obj_EmptyCrate","path":"objects/obj_EmptyCrate/obj_EmptyCrate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_EmptyCrate",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ShopItemParrent","path":"objects/obj_ShopItemParrent/obj_ShopItemParrent.yy",},"propertyId":{"name":"price","path":"objects/obj_ShopItemParrent/obj_ShopItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
   ],
   "parent":{
     "name":"Items",

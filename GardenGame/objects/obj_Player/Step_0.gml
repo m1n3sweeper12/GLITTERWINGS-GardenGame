@@ -1,18 +1,29 @@
 // Changes the sprite based on direction
-if (speed = 0) { direction = 270 }
-if (direction > 0 and direction <= 45) { sprite_index = spr_PlayerEast }
-if (direction > 45 and direction <= 135) { sprite_index = spr_PlayerNorth }
-if (direction > 225 and direction <= 315) { sprite_index = spr_PlayerSouth }
-if (direction > 315 and direction <= 360) { sprite_index = spr_PlayerEast }
-if (direction > 135 and direction <= 225) { sprite_index = spr_PlayerWest }
+// check for idle or walking animation
+if(speed > 0) { // player is walking
+	if (direction >= 0 and direction <= 45) { sprite_index = spr_PlayerEast }
+	if (direction > 45 and direction <= 135) { sprite_index = spr_PlayerNorth }
+	if (direction > 225 and direction <= 315) { sprite_index = spr_PlayerSouth }
+	if (direction > 315 and direction <= 360) { sprite_index = spr_PlayerEast }
+	if (direction > 135 and direction <= 225) { sprite_index = spr_PlayerWest }
+} else { // player is idle
+	if (direction >= 0 and direction <= 45) { sprite_index = spr_PlayerIdleEast }
+	if (direction > 45 and direction <= 135) { sprite_index = spr_PlayerIdleNorth }
+	if (direction > 225 and direction <= 315) { sprite_index = spr_PlayerIdleSouth }
+	if (direction > 315 and direction <= 360) { sprite_index = spr_PlayerIdleEast }
+	if (direction > 135 and direction <= 225) { sprite_index = spr_PlayerIdleWest }
+}
+
+depth = -bbox_bottom;
 
 // Snaps the mouse's X and Y coords to be set to the grid
 x_snap = floor(mouse_x / grid_x) * grid_x;
 y_snap = floor(mouse_y / grid_y) * grid_y;
 
 // Snaps your mouse position to the grid before moving the player to the location.
-if (mouse_check_button_pressed(mb_left) and !position_meeting(gui_mouse_x, gui_mouse_y, obj_GUI_ButtonParrent))
+if (!obj_GameManager.shop_open and mouse_check_button_pressed(mb_left) and !position_meeting(gui_mouse_x, gui_mouse_y, obj_GUI_ButtonParrent))
 {
+	
 	x_to = x_snap;
 	y_to = y_snap;
 	move_towards_point(x_to, y_to, 3);

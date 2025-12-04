@@ -9,3 +9,5 @@ obj_GameManager.total_crates_of_fire += crates_of_fire;
 obj_GameManager.total_crates_of_water += crates_of_water;
 obj_GameManager.total_crates_of_air += crates_of_air;
 */
+
+depth = -bbox_bottom;

@@ -1,6 +1,6 @@
 if (position_meeting(gui_mouse_x, gui_mouse_y, id ))
 {
-	if (mouse_check_button_pressed(mb_left))
+	if (mouse_check_button_pressed(mb_left) and obj_GameManager.money >= price)
 	{
 		isSelected = true;
 	}
