@@ -1,12 +1,14 @@
+land_lock_popup = false;
+
 money = 100;
 
 total_max_storage = 20;
 total_current_storage = 0;
 
-total_crates_of_earth = 0;
-total_crates_of_fire = 0;
-total_crates_of_water = 0;
-total_crates_of_air = 0;
+total_crates_of_earth = 4;
+total_crates_of_fire = 5;
+total_crates_of_water = 3;
+total_crates_of_air = 6;
 
 shop_open = false;
 selling_to_market = false;

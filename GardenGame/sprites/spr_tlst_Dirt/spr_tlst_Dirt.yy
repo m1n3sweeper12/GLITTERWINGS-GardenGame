@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_tlst_Dirt",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":191,
   "bbox_left":0,
   "bbox_right":319,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":192,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d4f49474-5fb6-41c4-8fbd-9c7d9bb09054","blendMode":0,"displayName":"default","isLocked":false,"name":"d4f49474-5fb6-41c4-8fbd-9c7d9bb09054","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

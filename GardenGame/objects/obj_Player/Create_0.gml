@@ -41,7 +41,7 @@ function PlowFarmland()
 	
 	if (x_snap = x and y_snap = y) // If the mouse clicks on the same tile the player is on...
 	{
-		if (!place_meeting(x, y, obj_PlantParrent))
+		if (!place_meeting(x, y, obj_PlantParrent) and !place_meeting(x, y, obj_LandLock))
 		{
 			// Detects what tile you are clicking on
 			if(farmland_tileset > -1 and tilemap_get_at_pixel(farmland_tileset, x_snap, y_snap) > -1)
@@ -54,7 +54,7 @@ function PlowFarmland()
 			{
 				tilemap_set_at_pixel(farmland_tileset, 9, x_snap, y_snap);
 			}
-			else
+			else if (farmland_tile_type = 1)
 			{
 				tilemap_set_at_pixel(farmland_tileset, 0, x_snap, y_snap);
 			}
@@ -79,7 +79,7 @@ function PlantSeeds(plant_object)
 			{
 				instance_create_layer(x, y, "Plants", plant_object);
 				current_special_value -= 5;
-				if (current_special_value <= 0) { current_item = equipped.none; }
+				if (current_special_value <= 0) { current_item = equipped.none; has_special = false;}
 			}
 		}
 	}
@@ -152,6 +152,7 @@ function DropItem()
 	if (current_item != equipped.none)
 	{
 		dropped_object = instance_create_layer(x, y, "Instances", object_name);
+		dropped_object.depth = -dropped_object.bbox_bottom;
 		with (dropped_object)
 		{
 			dropped_object.current_special_value = obj_Player.current_special_value;

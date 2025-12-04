@@ -1,6 +1,8 @@
 draw_self();
 
-draw_sprite(spr_Cursor, 0, x_snap, y_snap);
+if(!obj_GameManager.shop_open) {
+	draw_sprite(spr_Cursor, 0, x_snap, y_snap);
+}
 
 if (keyboard_check(vk_control))
 {

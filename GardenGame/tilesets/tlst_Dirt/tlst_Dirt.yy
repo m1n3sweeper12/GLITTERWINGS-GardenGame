@@ -13,7 +13,7 @@
     "TileSerialiseData":[],
   },
   "name":"tlst_Dirt",
-  "out_columns":7,
+  "out_columns":8,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -39,5 +39,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":50,
+  "tile_count":60,
 }
