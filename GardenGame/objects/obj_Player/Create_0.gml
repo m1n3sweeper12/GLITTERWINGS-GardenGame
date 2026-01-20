@@ -12,7 +12,8 @@ enum equipped {
 	seedsFire,
 	seedsEarth,
 	seedsWater,
-	seedsAir
+	seedsAir,
+	bugSpray
 }
 
 

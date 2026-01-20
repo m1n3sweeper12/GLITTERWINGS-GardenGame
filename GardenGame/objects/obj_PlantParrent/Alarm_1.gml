@@ -1,6 +1,6 @@
-if (!dead and water > 20)
+if (!dead and !diseased and water > 20)
 {
-	age += floor(random_range(0,3));
+	age += floor(random_range(min_age_rate,max_age_rate));
 	
 	if (age <= 10)
 	{
