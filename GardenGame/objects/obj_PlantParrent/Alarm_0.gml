@@ -1,7 +1,7 @@
 if (!harvestable)
 {
 
-	water -= round(random_range(0,2));
+	water -= round(random_range(min_thirst_rate,max_thirst_rate));
 
 	if (water <= 20 and water > 0)
 	{
