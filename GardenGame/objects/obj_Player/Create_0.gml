@@ -143,6 +143,10 @@ function DropItem()
 		case equipped.shovel:
 		object_name = obj_Shovel;
 		break;
+	
+		case equipped.bugSpray:
+		object_name = obj_BugSpray;
+		break;
 		
 		// If you have nothing equipped
 		

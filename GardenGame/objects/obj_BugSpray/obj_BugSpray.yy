@@ -7,7 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"has_special","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"bar_main_color","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF005296",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ItemParrent","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_ItemParrent/obj_ItemParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.bugSpray",},
   ],
   "parent":{
     "name":"Tools",

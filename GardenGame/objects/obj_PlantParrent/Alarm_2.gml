@@ -1,4 +1,4 @@
-if (!harvestable)
+if (!harvestable and !dead)
 {
 	disease_roll = random_range(0,100);
 
