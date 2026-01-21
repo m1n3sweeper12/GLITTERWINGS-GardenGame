@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PlantAir",
+  "%Name":"obj_PlantBasic",
   "eventList":[],
   "managed":true,
-  "name":"obj_PlantAir",
+  "name":"obj_PlantBasic",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_PlantParrent","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"propertyId":{"name":"plant_type_in_crate","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.crateAir",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_PlantParrent","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"propertyId":{"name":"plant_type_in_crate","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.crateBasic",},
   ],
   "parent":{
     "name":"Plants",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_PlantAir",
-    "path":"sprites/spr_PlantAir/spr_PlantAir.yy",
+    "name":"spr_PlantBasic",
+    "path":"sprites/spr_PlantBasic/spr_PlantBasic.yy",
   },
   "spriteMaskId":null,
   "visible":true,

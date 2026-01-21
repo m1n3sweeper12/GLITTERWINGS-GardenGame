@@ -9,10 +9,12 @@ enum equipped {
 	crateEarth,
 	crateWater,
 	crateAir,
+	crateBasic,
 	seedsFire,
 	seedsEarth,
 	seedsWater,
 	seedsAir,
+	seedsBasic,
 	bugSpray,
 	firtilizer
 }
@@ -121,6 +123,10 @@ function DropItem()
 		case equipped.crateAir:
 		object_name = obj_CrateAir;
 		break;
+
+		case equipped.crateBasic:
+		object_name = obj_CrateBasic;
+		break;
 		
 		// SEEDS
 		
@@ -138,6 +144,10 @@ function DropItem()
 
 		case equipped.seedsAir:
 		object_name = obj_SeedsAir;
+		break;
+		
+		case equipped.seedsBasic:
+		object_name = obj_SeedsBasic;
 		break;
 		
 		// TOOLS

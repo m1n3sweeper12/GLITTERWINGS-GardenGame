@@ -1,4 +1,4 @@
-total_current_storage = total_crates_of_fire + total_crates_of_earth + total_crates_of_water + total_crates_of_air;
+total_current_storage = total_crates_of_fire + total_crates_of_earth + total_crates_of_water + total_crates_of_air + total_crates_of_basic;
 
 if (mouse_check_button_pressed(mb_middle))
 {
@@ -23,8 +23,11 @@ if (total_current_storage = 0)
 	selling_to_market = false;
 }
 
+// When selling:
+
 if (selling_to_market = true)
 {
+	// Selling Fire
 	if (total_crates_of_fire > 0)
 	{
 	
@@ -37,6 +40,7 @@ if (selling_to_market = true)
 		fire_sales_delay_timer -= 1;
 	}
 
+	// Selling Earth
 	if (total_crates_of_earth > 0)
 	{
 	
@@ -49,6 +53,7 @@ if (selling_to_market = true)
 		earth_sales_delay_timer -= 1;
 	}
 
+	// Selling Water
 	if (total_crates_of_water > 0)
 	{
 	
@@ -61,6 +66,7 @@ if (selling_to_market = true)
 		water_sales_delay_timer -= 1;
 	}
 
+	// Selling Air
 	if (total_crates_of_air > 0)
 	{
 
@@ -72,4 +78,18 @@ if (selling_to_market = true)
 		}	
 		air_sales_delay_timer -= 1;
 	}
+	
+	// Selling Basic
+	if (total_crates_of_basic > 0)
+	{
+
+		if (basic_sales_delay_timer = 0)
+		{
+			total_crates_of_basic -= 1;
+			money += basic_price;
+			basic_sales_delay_timer = delay_range(basic_sales_delay);
+		}	
+		basic_sales_delay_timer -= 1;
+	}
+	
 }

@@ -5,10 +5,11 @@ money = 100;
 total_max_storage = 20;
 total_current_storage = 0;
 
-total_crates_of_earth = 4;
-total_crates_of_fire = 5;
-total_crates_of_water = 3;
-total_crates_of_air = 6;
+total_crates_of_basic = 0;
+total_crates_of_earth = 0;
+total_crates_of_fire = 0;
+total_crates_of_water = 0;
+total_crates_of_air = 0;
 
 shop_open = false;
 selling_to_market = false;
@@ -29,11 +30,13 @@ above_average_delay = 1.5;
 high_delay = 1;
 very_high_delay = 0.5;
 
+basic_demand = demand.average;
 fire_demand = demand.average;
 earth_demand = demand.average;
 water_demand = demand.average;
 air_demand = demand.average;
 
+basic_price = average_price;
 fire_price = average_price;
 earth_price = average_price;
 water_price = average_price;
@@ -49,16 +52,19 @@ enum demand {
 	very_high
 }
 
+basic_sales_delay = average_delay;
 fire_sales_delay = average_delay;
 earth_sales_delay = average_delay;
 water_sales_delay = average_delay;
 air_sales_delay = average_delay;
 
+basic_sales_delay_timer = average_delay;
 fire_sales_delay_timer = fire_sales_delay;
 earth_sales_delay_timer = earth_sales_delay;
 water_sales_delay_timer = water_sales_delay;
 air_sales_delay_timer = air_sales_delay;
 
+basic_timer = random_range(1, 15) * minute;
 fire_timer = random_range(1, 15) * minute;
 earth_timer = random_range(1, 15) * minute;
 water_timer = random_range(1, 15) * minute;
@@ -68,6 +74,7 @@ alarm_set(1,fire_timer);
 alarm_set(2,earth_timer);
 alarm_set(3,water_timer);
 alarm_set(4,air_timer);
+alarm_set(5,basic_timer);
 
 function generate_random_demand() 
 {

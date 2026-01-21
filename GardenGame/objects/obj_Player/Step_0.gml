@@ -58,6 +58,10 @@ if (mouse_check_button_pressed(mb_right))
 		PlantSeeds(obj_PlantAir);
 		break;
 		
+		case equipped.seedsBasic:
+		PlantSeeds(obj_PlantBasic);
+		break;
+		
 		// TOOLS
 
 		case equipped.wateringcan:
