@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_PlantAir",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_PlantParrent","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"propertyId":{"name":"plant_type_in_crate","path":"objects/obj_PlantParrent/obj_PlantParrent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"equipped.crateAir",},
+  ],
   "parent":{
     "name":"Plants",
     "path":"folders/Objects/Plants.yy",

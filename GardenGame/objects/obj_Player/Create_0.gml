@@ -9,11 +9,14 @@ enum equipped {
 	crateEarth,
 	crateWater,
 	crateAir,
+	crateBasic,
 	seedsFire,
 	seedsEarth,
 	seedsWater,
 	seedsAir,
-	bugSpray
+	seedsBasic,
+	bugSpray,
+	firtilizer
 }
 
 
@@ -63,6 +66,11 @@ function PlowFarmland()
 	}
 }
 
+function DestroyEmptyObject()
+{
+	if (current_special_value <= 0) { current_item = equipped.none; has_special = false; }
+}
+
 function PlantSeeds(plant_object)
 {
 	if (x_snap = x and y_snap = y) // If the mouse clicks on the same tile the player is on...
@@ -80,7 +88,7 @@ function PlantSeeds(plant_object)
 			{
 				instance_create_layer(x, y, "Plants", plant_object);
 				current_special_value -= 5;
-				if (current_special_value <= 0) { current_item = equipped.none; has_special = false;}
+				DestroyEmptyObject();
 			}
 		}
 	}
@@ -115,6 +123,10 @@ function DropItem()
 		case equipped.crateAir:
 		object_name = obj_CrateAir;
 		break;
+
+		case equipped.crateBasic:
+		object_name = obj_CrateBasic;
+		break;
 		
 		// SEEDS
 		
@@ -134,6 +146,10 @@ function DropItem()
 		object_name = obj_SeedsAir;
 		break;
 		
+		case equipped.seedsBasic:
+		object_name = obj_SeedsBasic;
+		break;
+		
 		// TOOLS
 		
 		case equipped.wateringcan:
@@ -146,6 +162,10 @@ function DropItem()
 	
 		case equipped.bugSpray:
 		object_name = obj_BugSpray;
+		break;
+		
+		case equipped.firtilizer:
+		object_name = obj_Firtilizer;
 		break;
 		
 		// If you have nothing equipped

@@ -35,3 +35,8 @@ else if (water <= 50 and water > 0)
 {
 	draw_sprite(spr_WaterWarning,0,x+8,y-8);
 }
+
+if (firtilized)
+{
+	draw_sprite(spr_FirtilizedWarning,0,x,y);
+}

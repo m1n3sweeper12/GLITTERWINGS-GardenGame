@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"UI",
-    "path":"folders/Sprites/UI.yy",
+    "name":"Popups",
+    "path":"folders/Sprites/UI/Popups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

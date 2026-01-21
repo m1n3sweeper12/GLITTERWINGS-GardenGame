@@ -58,6 +58,10 @@ if (mouse_check_button_pressed(mb_right))
 		PlantSeeds(obj_PlantAir);
 		break;
 		
+		case equipped.seedsBasic:
+		PlantSeeds(obj_PlantBasic);
+		break;
+		
 		// TOOLS
 
 		case equipped.wateringcan:
@@ -84,6 +88,8 @@ if (point_distance(x, y, x_to, y_to) < 2)
 	y = y_to;
 	
 }
+
+if (current_item = equipped.firtilizer or current_item = equipped.bugSpray) { DestroyEmptyObject(); }
 
 if (current_special_value <= 0) { current_special_value = 0; }
 if (current_special_value >= 100) { current_special_value = 100; }
