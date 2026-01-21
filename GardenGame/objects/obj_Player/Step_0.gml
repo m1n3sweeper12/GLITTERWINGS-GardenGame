@@ -85,5 +85,7 @@ if (point_distance(x, y, x_to, y_to) < 2)
 	
 }
 
+if (current_item = equipped.firtilizer or current_item = equipped.bugSpray) { DestroyEmptyObject(); }
+
 if (current_special_value <= 0) { current_special_value = 0; }
 if (current_special_value >= 100) { current_special_value = 100; }
